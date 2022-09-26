@@ -6,11 +6,11 @@ export default class Form extends Component {
       <div>
         <label htmlFor="Nome">
           Nome
-          <input type="text" data-testid="name-input" />
+          <input type="text" data-testid="name-input" value="cardName" />
         </label>
         <label htmlFor="Descricao">
           Descrição
-          <input type="textarea" data-testid="description-input" maxLength="100" />
+          <textarea data-testid="description-input" maxLength="100" />
         </label>
         <label htmlFor="Atrib">
           Attr01
