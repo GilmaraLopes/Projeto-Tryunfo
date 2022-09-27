@@ -15,12 +15,17 @@ class App extends React.Component {
     isSaveButtonDisabled: true,
   };
 
+  onInputChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
     return (
       <div>
         <h1>ADICIONE NOVA CARTA </h1>
-        <Form />
-        <Card />
+        <Form { ...this.state } onInputChange={ this.onInputChange } />
+        <Card { ...this.state } />
       </div>
     );
   }

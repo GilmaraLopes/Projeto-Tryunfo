@@ -11,7 +11,7 @@ export default class Form extends Component {
       cardAttr3,
       cardImage,
       cardRare,
-      cardTrunfo,
+      // cardTrunfo,
       isSaveButtonDisabled,
       onInputChange,
       onSaveButtonClick,
@@ -22,6 +22,7 @@ export default class Form extends Component {
           Nome
           <input
             id="Nome"
+            name="cardName"
             type="text"
             data-testid="name-input"
             value={ cardName }
@@ -32,6 +33,7 @@ export default class Form extends Component {
           Descrição
           <textarea
             id="Descricao"
+            name="cardDescription"
             data-testid="description-input"
             value={ cardDescription }
             onChange={ onInputChange }
@@ -42,6 +44,7 @@ export default class Form extends Component {
           Attr01
           <input
             id="Atrib1"
+            name="cardAttr1"
             type="number"
             data-testid="attr1-input"
             value={ cardAttr1 }
@@ -52,6 +55,7 @@ export default class Form extends Component {
           Attr02
           <input
             id="Atrib2"
+            name="cardAttr2"
             type="number"
             data-testid="attr2-input"
             value={ cardAttr2 }
@@ -62,6 +66,7 @@ export default class Form extends Component {
           Attr03
           <input
             id="Atrib3"
+            name="cardAttr3"
             type="number"
             data-testid="attr3-input"
             value={ cardAttr3 }
@@ -72,6 +77,7 @@ export default class Form extends Component {
           Imagem
           <input
             id="Imagem"
+            name="cardImage"
             type="text"
             data-testid="image-input"
             value={ cardImage }
@@ -81,6 +87,7 @@ export default class Form extends Component {
         <label htmlFor="Opcao">
           Raridade
           <select
+            name="cardRare"
             id="Opcao"
             data-testid="rare-input"
             value={ cardRare }
@@ -94,6 +101,7 @@ export default class Form extends Component {
         Super Trybe Trunfo
         <input
           type="checkbox"
+          name="cardTrunfo"
           checked="cardTrunfo"
           data-testid="trunfo-input"
           onChange={ onInputChange }
@@ -121,7 +129,7 @@ Form.propTypes = {
   cardAttr3: PropTypes.string.isRequired,
   cardImage: PropTypes.string.isRequired,
   cardRare: PropTypes.string.isRequired,
-  cardTrunfo: PropTypes.bool.isRequired,
+  // cardTrunfo: PropTypes.bool.isRequired,
   // hasTrunfo: PropTypes.bool.isRequired,
   isSaveButtonDisabled: PropTypes.bool.isRequired,
   onInputChange: PropTypes.func.isRequired,
