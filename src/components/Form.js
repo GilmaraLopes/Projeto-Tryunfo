@@ -22,7 +22,6 @@ export default class Form extends Component {
           <label htmlFor="Nome">
             Nome
             <input
-              id="Nome"
               name="cardName"
               type="text"
               data-testid="name-input"
@@ -33,7 +32,6 @@ export default class Form extends Component {
           <label htmlFor="Descricao">
             Descrição
             <input
-              id="Descricao"
               name="cardDescription"
               type="textarea"
               data-testid="description-input"
@@ -44,7 +42,6 @@ export default class Form extends Component {
           <label htmlFor="Atrib1">
             Attr01
             <input
-              id="Atrib1"
               name="cardAttr1"
               type="number"
               data-testid="attr1-input"
@@ -55,7 +52,6 @@ export default class Form extends Component {
           <label htmlFor="Atrib2">
             Attr02
             <input
-              id="Atrib2"
               name="cardAttr2"
               type="number"
               data-testid="attr2-input"
@@ -66,7 +62,6 @@ export default class Form extends Component {
           <label htmlFor="Atrib3">
             Attr03
             <input
-              id="Atrib3"
               name="cardAttr3"
               type="number"
               data-testid="attr3-input"
@@ -77,7 +72,6 @@ export default class Form extends Component {
           <label htmlFor="Imagem">
             Imagem
             <input
-              id="Imagem"
               name="cardImage"
               type="text"
               data-testid="image-input"

@@ -5,11 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p, label{
+  padding: 10px;
 }
 
 /* reset */
@@ -19,49 +27,49 @@ code {
   box-sizing: border-box;
 } */
 
-:root {
+/* :root { */
   /* colors */
-  --green-dark: #036b52;
+  /* --green-dark: #036b52;
   --green-light: #d1e7dd;
   --blue: #006dfb;
   --purple: #41197f;
   --black: #222;
   --white: #fff;
   --red-light: #f8d7da;
-  --red-dark: #dc3545;
+  --red-dark: #dc3545; */
   /* 60 30 10 */
-  --primary: var(--white);
+  /* --primary: var(--white);
   --secondary: #1a1b1c;
   --accent: #2fc18c;
   --grey-50: #f8fafc;
-  --grey-200: #e2e8f0;
+  --grey-200: #e2e8f0; */
   /* box shadows */
-  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  /* --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
-    0 4px 6px -2px rgba(0, 0, 0, 0.08);
+    0 4px 6px -2px rgba(0, 0, 0, 0.08); */
 
   /* config blablabla */
-  --borderRadius: 0.25rem;
+  /* --borderRadius: 0.25rem;
   --max-width: 1120px;
-  --transition: 0.3s ease-in-out all;
+  --transition: 0.3s ease-in-out all; */
   /* font */
-  --letterSpacing: 1px;
+  /* --letterSpacing: 1px;
   --headingFont: 'Roboto', sans-serif;
   --bodyFont: 'Nunito', sans-serif;
-}
+} */
 
-::selection {
+/* ::selection {
   background-color: var(--green-light);
-}
+} */
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
 
-html {
+/* html {
   font-size: 100%;
-}
+} */
 
 /*16px*/
 
@@ -72,20 +80,20 @@ html {
   color: #000000;
 } */
 
-p {
+/* p {
   margin-bottom: 1rem;
   padding: 10px;
   display: flex;
   /* flex-direction: row; */
-  align-items: center;
-  padding: 0px;
+  /* align-items: center;
+  padding: 0px;  */
   
     /* position: absolute; */
-  width: 365px;
+  /* width: 365px;
   height: 37px;
   left: 0px;
   top: 0px;
-}
+} */
 
 /* h1,
 h2,
@@ -166,13 +174,13 @@ button:disabled {
 /* } */
 
 /* form */
-div {
+/* div {
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
-  padding: 2rem 2.5rem;
+  padding: 2rem 2.5rem; */
   /* border: 1px solid black; */
-}
+/* } */
 /* 
 input,
 textarea,
