@@ -15,6 +15,7 @@ class App extends React.Component {
     cardTrunfo: false,
     isSaveButtonDisabled: true,
     savedCards: [],
+    hasTrunfo: false,
   };
 
   // função para validar botão//
@@ -56,20 +57,28 @@ class App extends React.Component {
       cardAttr2,
       cardAttr3,
       cardTrunfo,
-      cardRare };
+      cardRare,
+    };
     this.setState((prevState) => ({
       savedCards: [...prevState.savedCards, newCard],
+      cardName: '',
+      cardDescription: '',
+      cardAttr1: 0,
+      cardAttr2: 0,
+      cardAttr3: 0,
+      cardImage: '',
+      cardRare: 'normal',
     }), () => {
       this.setState({
-        cardName: '',
-        cardDescription: '',
-        cardAttr1: 0,
-        cardAttr2: 0,
-        cardAttr3: 0,
-        cardImage: '',
-        cardRare: 'normal',
+        hasTrunfo: !this.validaTrunfo(),
       });
     });
+  };
+
+  validaTrunfo = () => {
+    const { cardTrunfo } = this.state;
+
+    if (!cardTrunfo) return true;
   };
 
   // função para atualizar o estado//
