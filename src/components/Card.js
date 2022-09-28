@@ -47,7 +47,7 @@ export default class Card extends Component {
           { cardRare }
           {' '}
         </p>
-        { cardTrunfo && <p data-testid="trunfo-card">Super Trunfo </p>}
+        { cardTrunfo && <p data-testid="trunfo-card">Super Trunfo</p>}
 
       </div>
     );
