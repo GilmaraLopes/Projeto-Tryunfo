@@ -1,4 +1,4 @@
-import { number } from 'prop-types';
+// import { number } from 'prop-types';
 import React from 'react';
 import Card from './components/Card';
 import Form from './components/Form';
