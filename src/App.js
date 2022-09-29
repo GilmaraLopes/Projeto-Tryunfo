@@ -92,6 +92,7 @@ class App extends React.Component {
   };
 
   render() {
+    const { savedCards } = this.state;
     return (
       <div>
         <h1>ADICIONE NOVA CARTA </h1>
@@ -102,13 +103,8 @@ class App extends React.Component {
           // isSaveButtonDisabled={ this.validaButton }
         />
         <Card { ...this.state } />
-        {/* <button
-                onClick={ () => this.removeCard(iten) }
-                type="submit"
-                data-testid="delete-button"
-              >
-                Excluir
-              </button> */}
+        { savedCards.map((element, index) => <Card { ...element } key={ index } />)}
+
       </div>
     );
   }
