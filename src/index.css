@@ -20,6 +20,13 @@ p, label{
   padding: 10px;
 }
 
+.trunfoLogo {
+  position: absolute;
+  width: 100px;
+  top: 14px;
+  right: 20px;
+}
+
 /* reset */
 /* * {
   margin: 0;

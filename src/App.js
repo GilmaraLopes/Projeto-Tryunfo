@@ -76,19 +76,27 @@ class App extends React.Component {
   };
 
   validaTrunfo = () => {
-    const { cardTrunfo } = this.state;
-
-    if (!cardTrunfo) return true;
+    const { savedCards } = this.state;
+    if (savedCards.some((cardTrunfo) => cardTrunfo.cardTrunfo === true)) {
+      this.setState({ hasTrunfo: true });
+    } else {
+      this.setState({ hasTrunfo: false });
+    }
   };
 
   // função para atualizar o estado//
   onInputChange = (e) => {
     const { name, type, checked } = e.target;
     const value = type === 'checkbox' ? checked : e.target.value;
-    // if (type === 'checkbox') {
-    //   this.setState({ cardTrunfo: checked });
-    // } else {
     this.setState({ [name]: value }, () => this.validaButton());
+  };
+
+  removeCard = ({ target }) => {
+    const { savedCards } = this.state;
+    const result = savedCards
+      .filter((item) => item.cardName !== target.id);
+    this.setState({ savedCards: result,
+    }, this.validaTrunfo);
   };
 
   render() {
@@ -103,8 +111,21 @@ class App extends React.Component {
           // isSaveButtonDisabled={ this.validaButton }
         />
         <Card { ...this.state } />
-        { savedCards.map((element, index) => <Card { ...element } key={ index } />)}
 
+        { savedCards.map((element, index) => (
+          <div key={ index }>
+            <Card { ...element } key={ index } />
+            <button
+              id={ element.cardName }
+              type="button"
+              label="button"
+              data-testid="delete-button"
+              onClick={ this.removeCard }
+            >
+              Excluir
+            </button>
+          </div>
+        ))}
       </div>
     );
   }

@@ -41,7 +41,7 @@ export default class Form extends Component {
             />
           </label>
           <label htmlFor="Atrib1">
-            Attr01
+            Conhecimento
             <input
               name="cardAttr1"
               type="number"
@@ -51,7 +51,7 @@ export default class Form extends Component {
             />
           </label>
           <label htmlFor="Atrib2">
-            Attr02
+            Didática
             <input
               name="cardAttr2"
               type="number"
@@ -61,7 +61,7 @@ export default class Form extends Component {
             />
           </label>
           <label htmlFor="Atrib3">
-            Attr03
+            Resenha
             <input
               name="cardAttr3"
               type="number"
@@ -105,6 +105,7 @@ export default class Form extends Component {
             />}
           </label>
           <button
+            className="btSave"
             type="submit"
             data-testid="save-button"
             disabled={ isSaveButtonDisabled }
