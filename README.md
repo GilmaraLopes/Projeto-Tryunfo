@@ -1,3 +1,7 @@
+
+## Seja bem-vindo(a) ao meu projeto Tryunfo
+Esse projeto tem como objetivo desenvolver uma aplicação utilizando React, simulando o jogo de cartas SuperTrunfo, nessa aplicação é possível escolher o nome, a imagem, os atributos, marcar uma carta como superTrunfo, definir a raridadade da carta. Além de filtrar as cartas já salvas por nome, raridade etc.
+
 ## Objetivos
 Desenvolver uma aplicação utilizando react.
 Desenvolver um jogo de cartas, semelhante ao SuperTrunfo.
